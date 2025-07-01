@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactNode } from "react";
 
+
 interface State {
     hasError: boolean;
 };
@@ -35,7 +36,8 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, State> {
             );
         }
         return this.props.children;
-    }
-}
+    };
+};
+
 
 export default ErrorBoundary;
